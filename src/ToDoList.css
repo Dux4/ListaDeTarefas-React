@@ -81,6 +81,7 @@ body{
 .item span{
     width: 100%;
     color: white;
+    text-align: start;
     margin-right: 10px;
     padding: 10px 15px;
 }
@@ -98,6 +99,7 @@ body{
 .item.completo span{
     width: 100%;
     color: #4d506e;
+    text-align: start;
     margin-right: 10px;
     padding: 10px 15px;
     text-decoration: line-through;
@@ -126,6 +128,7 @@ body{
     font-weight: bold;
     background: none;
     padding: 15px;
+    margin-top: 30px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -133,6 +136,10 @@ body{
 .delAll-btn:hover{
     background: #ff004c;
     color: white;
+}
+
+.EmptyListIcon{
+    max-width: 100%;
 }
 
 @media screen and (max-width:900px ) {
