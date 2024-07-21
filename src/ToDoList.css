@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*:focus{
+    outline: none;
+}
+
+body{
+    background: #222435;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.AddLista h1{
+    text-align: center;
+    font-weight: 900;
+    color: #7d83b9;
+}
+
+.AddLista form{
+    display: flex;
+    position: relative;
+    margin: 30px auto;
+    margin-bottom: 60px;
+    width: 600px;
+    height: 60px;
+}
+
+.AddLista form .add{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background: #363b65;
+    border: none;
+    cursor: pointer;
+    padding: 10px 25px ;
+    height:61px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.AddLista form .add:hover{
+    color: white;
+    background: #363f88;
+}
+
+
+.AddLista input{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: #2d3046;
+    color: white;
+    border:none;
+    padding-left: 30px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.ShowList{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 600px;
+    margin: auto;
+}
+
+.item{
+    display: flex !important;
+    justify-content:space-between ;
+    border: 1px solid #363b65;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.item:hover{
+    background:#151627;
+}
+
+.item span{
+    width: 100%;
+    color: white;
+    margin-right: 10px;
+    padding: 10px 15px;
+}
+
+.item.completo{
+    display: flex !important;
+    justify-content:space-between;
+    background: #1e1f2e;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.item.completo span{
+    width: 100%;
+    color: #4d506e;
+    margin-right: 10px;
+    padding: 10px 15px;
+    text-decoration: line-through;
+}
+
+.del-btn{
+    color: #4d506e;
+    background: none;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.del-btn:hover{
+    background: #ff004c;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+
+}
+
+.delAll-btn{
+    color: #ff004c;
+    border: 1px solid #ff004c;
+    font-weight: bold;
+    background: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delAll-btn:hover{
+    background: #ff004c;
+    color: white;
+}
+
+@media screen and (max-width:900px ) {
+    .AddLista form{
+        width: 100%;
+        
+    }
+
+    .ShowList{
+        width: 100%;
+    }
+    
+}
